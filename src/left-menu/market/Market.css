@@ -1,0 +1,37 @@
+.market-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .market-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .market-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  .market-table th,
+  .market-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .market-table th {
+    background-color: #f4f4f4;
+    color: #000;
+  }
+  
+  .market-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .market-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  

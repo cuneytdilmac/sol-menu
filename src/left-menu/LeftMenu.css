@@ -1,0 +1,65 @@
+.menu-container {
+    margin: 0;
+    padding: 16px;
+    height: 100vh;
+    width: 200px; /* Genişlik menü açıkken */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #f0f4f8, #d9e2ec);
+    position: fixed;
+    top: 0;
+    left: -200px; /* Başlangıçta gizli */
+    transition: left 0.3s ease-in-out; /* Animasyonlu geçiş */
+    z-index: 1000;
+}
+
+.menu-container.open {
+    left: 0; /* Menü açıkken */
+}
+
+.menu-buton-container {
+    background: linear-gradient(145deg, #ffffff, #e8e8e8);
+    border: none;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-buton-container:hover {
+    background: linear-gradient(145deg, #e0f7fa, #b2ebf2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-buton-container:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-toggle-button {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 1100;
+    transition: background-color 0.3s;
+}
+
+.menu-toggle-button:hover {
+    background: #0056b3;
+}
